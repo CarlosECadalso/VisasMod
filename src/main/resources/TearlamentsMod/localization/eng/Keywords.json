@@ -1,0 +1,201 @@
+[
+  {
+    "PROPER_NAME": "This is displayed in the tooltip.",
+    "NAMES": [
+      "these",
+      "are",
+      "detected",
+      "in",
+      "the",
+      "text"
+    ],
+    "DESCRIPTION": "This is displayed in the tooltip. Spaces should not be used be avoided in NAMES, with the exception of multi-word keywords (see next entry)."
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "multiword keyword",
+      "multiword_keyword",
+      "multiword_keywords"
+    ],
+    "DESCRIPTION": "Make sure the first element in NAMES has no underscores. The rest should use _ in the place of spaces. In card text, you'll use the underscore versions."
+  },
+  {
+    "PROPER_NAME": "Tearlament",
+    "NAMES": [
+      "Tearlament",
+      "Tearlaments",
+      "tearlament",
+      "tearlaments"
+    ],
+    "DESCRIPTION": "Tag referenced by other cards. Tearlaments tend to get effects when discarded."
+  },
+  {
+    "PROPER_NAME": "Kashtira",
+    "NAMES": [
+      "Kashtira",
+      "Kashtiras",
+      "kashtira",
+      "kashtiras"
+    ],
+    "DESCRIPTION": "Tag referenced by other cards. Kashtiras tend to be expensive, but immediately powerful."
+  },
+  {
+    "PROPER_NAME": "Scareclaw",
+    "NAMES": [
+      "Scareclaw",
+      "Scareclaws",
+      "scareclaw",
+      "scareclaws"
+    ],
+    "DESCRIPTION": "Tag referenced by other cards. Scareclaws tend to be cheap and become stronger the more scareclaws you play."
+  },
+  {
+    "PROPER_NAME": "Mannadium",
+    "NAMES": [
+      "Mannadium",
+      "Mannadiums",
+      "mannadium",
+      "mannadiums"
+    ],
+    "DESCRIPTION": "Tag referenced by other cards. Mannadiums tend to make other cards easier to play."
+  },
+  {
+    "PROPER_NAME": "Evolve",
+    "NAMES": [
+      "Evolve",
+      "evolve",
+      "Evolution",
+      "evolution",
+      "Evolved",
+      "evolved",
+      "evolves",
+      "Evolves",
+      "Evolving",
+      "evolving"
+    ],
+    "DESCRIPTION": "Transform a card into into the previewed card for the rest of the combat. Keeps upgrades upon fusing."
+  },
+  {
+    "PROPER_NAME": "Evolve shuffle",
+    "NAMES": [
+      "Evolve shuffle",
+      "evolve shuffle",
+      "Evolve_shuffle",
+      "evolve_shuffling",
+      "evolve_shuffled",
+      "Evolve_shuffled",
+      "Evolve_shuffling"
+    ],
+    "DESCRIPTION": "Transform a card in your discard pile into the previewed card for the rest of the combat and shuffles it into the draw pile. Keeps upgrades upon fusing."
+  },
+  {
+    "PROPER_NAME": "Mill X",
+    "NAMES": [
+      "mill",
+      "Mill",
+      "Mills",
+      "mills",
+      "milled",
+      "Milled",
+      "Milling",
+      "milling"
+    ],
+    "DESCRIPTION": "Send X card(s) from the draw pile to the discard pile."
+  },
+  {
+    "PROPER_NAME": "Exhume X",
+    "NAMES": [
+      "Exhume",
+      "exhume",
+      "Exhumed",
+      "exhumed",
+      "Exhumes",
+      "exhumes",
+      "Exhuming",
+      "exhuming"
+    ],
+    "DESCRIPTION": "Choose X Exhausted card(s) and put them in your hand."
+  },
+  {
+    "PROPER_NAME": "Evolve self",
+    "NAMES": [
+      "Evolve self",
+      "Evolve_self",
+      "evolve_self",
+      "Evolves_self",
+      "evolve_self",
+      "Evolved_self",
+      "evolved_self",
+      "Evolving_self",
+      "evolving_self"
+    ],
+    "DESCRIPTION": "Transform this card into the previewed card for the rest of the combat and shuffles it into the draw pile. Keeps upgrades upon fusing."
+  },
+  {
+    "PROPER_NAME": "Elite",
+    "NAMES": [
+      "Elite",
+      "elite",
+      "Elites",
+      "elite"
+    ],
+    "DESCRIPTION": "Can be obtained from evolving a creature. Elites are Creatures."
+  },
+  {
+    "PROPER_NAME": "Creature",
+    "NAMES": [
+      "Creature",
+      "creature",
+      "Creatures",
+      "creatures",
+      "Creature?",
+      "creature?",
+      "Creatures?",
+      "creatures?",
+      "Creature.",
+      "creature.",
+      "Creatures.",
+      "creatures."
+    ],
+    "DESCRIPTION": "Evolves into a specific Elite."
+  },
+  {
+    "PROPER_NAME": "Initiative X",
+    "NAMES": [
+      "Initiative",
+      "initiative"
+    ],
+    "DESCRIPTION": "Cost 0 [R] if it's the first X card played."
+  },
+  {
+    "PROPER_NAME": "Discover",
+    "NAMES": [
+      "Discover",
+      "discover"
+    ],
+    "DESCRIPTION": "Chose 1 of random 3 cards to add to hand."
+  },
+  {
+    "PROPER_NAME": "Flanking",
+    "NAMES": [
+      "Flanking",
+      "flanking"
+    ],
+    "DESCRIPTION": "Cost 1 less [R] per creature card played this turn."
+  },
+  {
+    "PROPER_NAME": "Seek X",
+    "NAMES": [
+      "Seek",
+      "seek",
+      "Sought",
+      "sought",
+      "Seeks",
+      "seeks",
+      "Seeking",
+      "seeking"
+    ],
+    "DESCRIPTION": "Choose X card(s) from your draw pile and put them in your hand."
+  }
+]

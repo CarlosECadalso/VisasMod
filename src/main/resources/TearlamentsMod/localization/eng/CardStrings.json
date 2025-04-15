@@ -1,0 +1,340 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description. NL Second line.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "${modID}:StrikeVisas": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "${modID}:DefendVisas": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "${modID}:ClearNewWorld": {
+    "NAME": "Clear New World",
+    "DESCRIPTION": "Discard 1 card. NL Draw 1 random card of a different card type NL (Attack / Skill / Power)",
+    "UPGRADE_DESCRIPTION": "Discard 1 card. NL ${modID}:Seek 1 card of a different card type NL (Attack / Skill / Power)"
+  },
+  "${modID}:TearlamentMerrli": {
+    "NAME": "Merrli",
+    "DESCRIPTION": "${modID}:Tearlament ${modID}:Creature NL Gain !B! Block. NL ${modID}:Mill !M! cards. NL If discarded: ${modID}:Evolve_shuffle."
+  },
+  "${modID}:TearlamentScheiren": {
+    "NAME": "Scheiren",
+    "DESCRIPTION": "${modID}:Tearlament ${modID}:Creature NL Deal !D! damage. NL ${modID}:Mill !M! cards. NL If discarded: ${modID}:Evolve_shuffle."
+  },
+  "${modID}:TearlamentHavnis": {
+    "NAME": "Havnis",
+    "DESCRIPTION": "${modID}:Tearlament ${modID}:Creature NL Deal !D! damage to all enemies. NL ${modID}:Mill !M! cards. NL If discarded: ${modID}:Evolve_shuffle."
+  },
+  "${modID}:TearlamentReinoheart": {
+    "NAME": "Reinoheart",
+    "DESCRIPTION": "${modID}:Tearlament ${modID}:Creature NL Deal !D! damage. NL ${modID}:Mill up to !M! card of your choice NL (Except Reinoheart). NL If discarded: Add this to hand and its cost becomes 0 for the turn."
+  },
+  "${modID}:TearlamentKashtira": {
+    "NAME": "Kashtira",
+    "DESCRIPTION": "${modID}:Tearlament ${modID}:Kashtira ${modID}:Creature NL Deal !D! damage. NL Cost [R] less for each Exhausted ${modID}:Tearlament or ${modID}:Kashtira. NL If discarded: Mill !M! card.",
+    "UPGRADE_DESCRIPTION": "${modID}:Tearlament ${modID}:Kashtira ${modID}:Creature NL Deal !D! damage. NL Cost [R] less for each ${modID}:Tearlament or ${modID}:Kashtira Exhausted. NL If discarded: Mill !M! cards."
+  },
+  "${modID}:TearlamentKitkallos": {
+    "NAME": "Kitkallos",
+    "DESCRIPTION": "${modID}:Tearlament ${modID}:Elite NL Deal !D! damage. NL Draw a card. Gain [R]. NL If discarded: Mill !M! cards."
+  },
+  "${modID}:TearlamentRulkallos": {
+    "NAME": "Rulkallos",
+    "DESCRIPTION": "${modID}:Tearlament ${modID}:Elite NL Deal !D! damage. NL Upgrade ALL ${modID}:Tearlament cards. NL If discarded: Add this to hand and this card costs 0 this turn."
+  },
+  "${modID}:TearlamentKaleidoHeart": {
+    "NAME": "Kaleido-Heart",
+    "DESCRIPTION": "${modID}:Tearlament ${modID}:Elite NL Deal !D! damage 3 times. NL Inflict !M! Vulnerable. NL If discarded: Add this to hand and this card costs 0 this turn."
+  },
+  "${modID}:PrimevalPlanetPerlereino": {
+    "NAME": "Primeval Perlereino",
+    "DESCRIPTION": "Gain !M! Strength. NL Whenever you play a ${modID}:Tearlament card, deal 2 damage to all enemies.",
+    "EXTENDED_DESCRIPTION": [
+      "Gain !M! Strength. NL Whenever you play a ${modID}:Tearlament card, deal ",
+      " damage to all enemies."
+    ]
+  },
+  "${modID}:TearlamentMetanoise": {
+    "NAME": "Tearlaments Metanoise",
+    "DESCRIPTION": "${modID}:Tearlament NL Inflict !M! Weak NL Gain !B! Block. NL If discarded: Gain [R]."
+  },
+  "${modID}:TearlamentGrief": {
+    "NAME": "Tearlaments Grief",
+    "DESCRIPTION": "${modID}:Tearlament NL Draw !M! cards. NL Discard 1 card. NL If discarded: Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "${modID}:Tearlament NL Gain [R] NL Draw !M! cards. NL Discard 1 card. NL If discarded: Gain !B! Block."
+  },
+  "${modID}:TearlamentHeartbeat": {
+    "NAME": "Tearlaments Heartbeat",
+    "DESCRIPTION": "${modID}:Tearlament NL Gain !B! Block. NL If discarded: Draw a card.",
+    "UPGRADE_DESCRIPTION": "${modID}:Tearlament NL Gain !B! Block. NL Heal debuffs. NL If discarded: Draw a card."
+  },
+  "${modID}:TearlamentCryme": {
+    "NAME": "Tearlaments Cryme",
+    "DESCRIPTION": "${modID}:Tearlament NL Gain !M! Intangible. NL If discarded: ${modID}:Exhume 1 and Exhaust this card."
+  },
+  "${modID}:TearlamentScream": {
+    "NAME": "Tearlaments Scream",
+    "DESCRIPTION": "${modID}:Tearlament NL ${modID}:Mill !M! cards. NL Whenever you play a ${modID}:Tearlament card, all enemies lose 1 Strength for the turn. NL If discarded: Upgrade this card."
+  },
+  "${modID}:TearlamentSulliek": {
+    "NAME": "Tearlaments Sulliek",
+    "DESCRIPTION": "${modID}:Tearlament NL Whenever you play a ${modID}:Tearlament card, Mill 1 card and gain !M! Block NL If discarded: Upgrade this card."
+  },
+  "${modID}:TearlamentPerlegia": {
+    "NAME": "Tearlaments Perlegia",
+    "DESCRIPTION": "${modID}:Tearlament NL Gain 2 Strength if you don't have any. NL Scry !M!."
+  },
+  "${modID}:Mudragon": {
+    "NAME": "Mudragon",
+    "DESCRIPTION": "${modID}:Elite NL A failed ${modID}:Evolution NL Deal !D! damage NL Gain !B! Block"
+  },
+  "${modID}:Sorrow": {
+    "NAME": "Sorrow",
+    "DESCRIPTION": "Inflict Weak on all enemies"
+  },
+  "${modID}:Anger": {
+    "NAME": "Anger",
+    "DESCRIPTION": "Deal !D! damage to all enemies"
+  },
+  "${modID}:Fear": {
+    "NAME": "Fear",
+    "DESCRIPTION": "Inflict Vulnerable on all enemies"
+  },
+  "${modID}:Peace": {
+    "NAME": "Peace",
+    "DESCRIPTION": "Gain !B! Block"
+  },
+  "${modID}:PressuredPlanetWraitsoth": {
+    "NAME": "Pressured Wraitsoth",
+    "DESCRIPTION": "${modID}:Creature? NL Gain !M! Strength. NL Whenever a card is Exhausted, deal 2 damage to all enemies.",
+    "EXTENDED_DESCRIPTION": [
+      "${modID}:Creature? NL Gain !M! Strength. NL Whenever a card is Exhausted, deal ",
+      " damage to all enemies. NL If you have Exhausted more than 2 cards: ${modID}:Evolve into ${modID}:KashtiraShangriIra"
+    ]
+  },
+  "${modID}:KashtiraShangriIra": {
+    "NAME": "Kashtira Shangri-Ira",
+    "DESCRIPTION": "${modID}:Kashtira ${modID}:Elite NL Gain !B! Block. NL Inflict !M! stacks of debuffs based on the number of cards Exhausted NL ( Weak, Vulnerable, Poison, Slow, Lose Strength, Stun) NL Purge"
+  },
+  "${modID}:KashtiraFenrir": {
+    "NAME": "Kashtira Fenrir",
+    "DESCRIPTION": "${modID}:Kashtira ${modID}:Creature NL Deal !D! damage NL Inflict !M! Slow NL Exhaust 1 card NL ${modID}:Initiative ${modID}:Creature"
+  },
+  "${modID}:KashtiraUnicorn": {
+    "NAME": "Kashtira Unicorn",
+    "DESCRIPTION": "${modID}:Kashtira ${modID}:Creature NL Deal !D! damage NL Inflict !M! Weak NL Exhaust 1 card NL ${modID}:Initiative ${modID}:Creature"
+  },
+  "${modID}:KashtiraOgre": {
+    "NAME": "Kashtira Ogre",
+    "DESCRIPTION": "${modID}:Kashtira ${modID}:Creature NL Deal !D! damage NL Inflict !M! Vulnerable NL Exhaust 1 card NL ${modID}:Initiative ${modID}:Creature"
+  },
+  "${modID}:KashtiraAriseHeart": {
+    "NAME": "Arise-Heart",
+    "DESCRIPTION": "${modID}:Kashtira ${modID}:Elite NL Deal !D! damage. NL Deal extra damage !M! per card Exhausted NL Exhaust"
+  },
+  "${modID}:KashtiraRiseheart": {
+    "NAME": "Riseheart",
+    "DESCRIPTION": "${modID}:Kashtira ${modID}:Creature NL Deal !D! damage NL If you played a ${modID}:Kashtira card this turn: ${modID}:Evolve_self"
+  },
+  "${modID}:KashtiraBirth": {
+    "NAME": "Kashtira Birth",
+    "DESCRIPTION": "${modID}:Kashtira NL Add a random ${modID}:Kashtira ${modID}:Creature to hand. NL It cost 0 [R] this turn. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "${modID}:Kashtira NL {modID}:Discover a ${modID}:Kashtira ${modID}:Creature. NL It cost 0 [R] this turn. NL Exhaust"
+  },
+  "${modID}:ScareclawKashtira": {
+    "NAME": "Scareclaw Kashtira",
+    "DESCRIPTION": "${modID}:Kashtira ${modID}:Creature NL Cost 1 [R] less for each Exhausted ${modID}:Scareclaw or ${modID}:Kashtira. NL Gain !B! Block. NL Deal damage equal to your current Block."
+  },
+  "${modID}:KashtiraOverlap": {
+    "NAME": "Kashtira Overlap",
+    "DESCRIPTION": "${modID}:Kashtira NL Exhaust a card. NL Gain !M! Vigor"
+  },
+  "${modID}:KashtiraPreparations": {
+    "NAME": "Kashtira Preparations",
+    "DESCRIPTION": "${modID}:Kashtira NL Whenever you're attacked, inflict 1 Weak to the attacker"
+  },
+  "${modID}:KashtiraBigBang": {
+    "NAME": "Kashtira Big Bang",
+    "DESCRIPTION": "${modID}:Kashtira NL ${modID}:Exhume 1 card NL Exhaust a card"
+  },
+  "${modID}:Kashtiratheosis": {
+    "NAME": "Kashtiratheosis",
+    "DESCRIPTION": "${modID}:Kashtira NL ${modID}:Evolve 1 card in hand NL Exhaust 1 card NL Exhaust"
+  },
+  "${modID}:ScareclawReichheart": {
+    "NAME": "Reichheart",
+    "DESCRIPTION": "${modID}:Scareclaw ${modID}:Creature NL Deal !D! damage NL If you've played !M! or more cards this turn: ${modID}:Evolve_self"
+  },
+  "${modID}:ScareclawTriHeart": {
+    "NAME": "Tri-Heart",
+    "DESCRIPTION": "${modID}:Scareclaw ${modID}:Elite NL Dead !D! damage for each card played this turn. NL If your hand isn't empty: NL Gain [R]",
+    "UPGRADE_DESCRIPTION": "${modID}:Scareclaw ${modID}:Elite NL Dead !D! damage for each card played this turn. NL If your hand isn't empty: NL Gain [R][R]."
+  },
+  "${modID}:ScareclawAcro": {
+    "NAME": "Acro-phobia",
+    "DESCRIPTION": "${modID}:Scareclaw ${modID}:Creature NL Gain !B! Block. NL If you've played a card this turn: Gain !M! Temporary Strength."
+  },
+  "${modID}:ScareclawAstra": {
+    "NAME": "Astra-phobia",
+    "DESCRIPTION": "${modID}:Scareclaw ${modID}:Creature NL Deal !D! damage. NL If you've played a card this turn: Gain [R]."
+  },
+  "${modID}:ScareclawBelone": {
+    "NAME": "Belone-phobia",
+    "DESCRIPTION": "${modID}:Scareclaw ${modID}:Creature NL Deal !D! damage. NL If you've played a card this turn: Remove all Block from the target."
+  },
+  "${modID}:ScareclawLightHeart": {
+    "NAME": "LightHeart",
+    "DESCRIPTION": "${modID}:Scareclaw ${modID}:Elite NL Gain !B! Block. NL Whenever you play a card: Return this from the discard pile to your hand."
+  },
+  "${modID}:PrimitivePlanetReichphobia": {
+    "NAME": "Primitive Reichphobia",
+    "DESCRIPTION": "Gain !M! Strength. NL Whenever you play a ${modID}:Scareclaw card, deal 1 damage to all enemies for each card played this turn.",
+    "EXTENDED_DESCRIPTION": [
+      "Gain !M! Strength. NL Whenever you play a ${modID}:Scareclaw card, deal ",
+      " damage to all enemies for each card played this turn."
+    ]
+  },
+  "${modID}:ScareclawNova": {
+    "NAME": "Scareclaw Nova",
+    "DESCRIPTION": "${modID}:Scareclaw NL Add a random common ${modID}:Scareclaw ${modID}:Creature to hand. NL It cost 0 [R] this turn.",
+    "UPGRADE_DESCRIPTION": "${modID}:Scareclaw NL {modID}:Discover a common ${modID}:Scareclaw ${modID}:Creature. NL It cost 0 [R] this turn."
+  },
+  "${modID}:ScareclawDecline": {
+    "NAME": "Scareclaw Decline",
+    "DESCRIPTION": "${modID}:Scareclaw NL Draw cards until you have !M! in hand. NL Exhaust any cards remaining in your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "${modID}:Scareclaw NL Draw cards until your hand is full. NL Exhaust any cards remaining in your draw pile. NL Exhaust."
+  },
+  "${modID}:ScareclawDefanging": {
+    "NAME": "Scareclaw Defanging",
+    "DESCRIPTION": "${modID}:Scareclaw NL Gain 1 Intangible. NL Gain 1 Entangle. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "${modID}:Scareclaw NL Gain 1 Intangible. NL Exhaust."
+  },
+  "${modID}:ScareclawSclash": {
+    "NAME": "Scareclaw Sclash",
+    "DESCRIPTION": "${modID}:Scareclaw NL Exhaust ALL ${modID}:Scareclaw ${modID}:Creatures and ${modID}:Elites in your hand. NL Deal their total damage and gain their total block. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "${modID}:Scareclaw NL Exhaust ALL ${modID}:Scareclaw ${modID}:Creatures and ${modID}:Elites in your hand. NL Deal their total damage and gain their total block."
+  },
+  "${modID}:ScareclawStraddle": {
+    "NAME": "Scareclaw Straddle",
+    "DESCRIPTION": "${modID}:Scareclaw NL Gain !B! Block. NL Reduce this card's cost by [R] whenever you play a card."
+  },
+  "${modID}:ScareclawTwinsaw": {
+    "NAME": "Scareclaw Twinsaw",
+    "DESCRIPTION": "${modID}:Scareclaw NL Deal damage equal to the number of cards played this turn twice."
+  },
+  "${modID}:MannadiumTorrid": {
+    "NAME": "Torrid",
+    "DESCRIPTION": "${modID}:Mannadium ${modID}:Creature? NL Channel 1 ${modID}:TorridOrb"
+  },
+  "${modID}:MannadiumFearless": {
+    "NAME": "Fearless",
+    "DESCRIPTION": "${modID}:Mannadium ${modID}:Creature? NL Channel 1 ${modID}:FearlessOrb"
+  },
+  "${modID}:MannadiumMeek": {
+    "NAME": "Meek",
+    "DESCRIPTION": "${modID}:Mannadium ${modID}:Creature? NL Channel 1 ${modID}:MeekOrb"
+  },
+  "${modID}:MannadiumPrimeHeart": {
+    "NAME": "Prime-Heart",
+    "DESCRIPTION": "${modID}:Mannadium ${modID}:Elite NL Deal !D! damage to ALL enemies. NL Repeat for each orb channeled this combat."
+  },
+  "${modID}:MannadiumTrisukta": {
+    "NAME": "Trisukta",
+    "DESCRIPTION": "${modID}:Mannadium ${modID}:Elite NL Deal !D! damage. NL Channel !M! random ${modID}:Mannadium Orbs."
+  },
+  "${modID}:MannadiumRiumheart": {
+    "NAME": "Riumheart",
+    "DESCRIPTION": "${modID}:Mannadium ${modID}:Creature NL Deal !D! damage. NL Remove all your Orbs NL If you removed: NL 1+: Gain [R] NL 2+: Add a MannadiumTrisukta to your hand. NL 3+: {modID}:Evolve_self.",
+    "UPGRADE_DESCRIPTION": "${modID}:Mannadium ${modID}:Creature NL Deal !D! damage. NL Remove all your Orbs NL If you removed: NL 1+: Gain [R][R] NL 2+: Add a MannadiumTrisukta+ to your hand. NL 3+: {modID}:Evolve_self."
+  },
+  "${modID}:PeacefulPlanetCalarium": {
+    "NAME": "Peaceful Calarium",
+    "DESCRIPTION": "Gain !M! Strength. NL Whenever you Channel an Orb, deal 1 damage to all enemies for each card played this turn.",
+    "EXTENDED_DESCRIPTION": [
+      "Gain !M! Strength. NL Whenever you Channel an Orb, deal ",
+      " damage to all enemies for each card played this turn."
+    ]
+  },
+  "${modID}:MannadiumAbscission": {
+    "NAME": "Mannadium Abscission",
+    "DESCRIPTION": "${modID}:Mannadium NL Remove your next Orb. NL Gain !B! Block."
+  },
+  "${modID}:MannadiumBreakheart": {
+    "NAME": "Mannadium Breakheart",
+    "DESCRIPTION": "${modID}:Mannadium NL Ethereal NL Deal !D! damage NL Exhaust"
+  },
+  "${modID}:MannadiumImaginings": {
+    "NAME": "Mannadium Imaginings",
+    "DESCRIPTION": "${modID}:Mannadium NL Remove your next Orb. NL Draw !M! cards."
+  },
+  "${modID}:MannadiumReframing": {
+    "NAME": "Mannadium Reframing",
+    "DESCRIPTION": "${modID}:Mannadium NL Remove your next Orb. NL Deal !D! damage. NL Inflict !M! Vulnerable and !M! Weak."
+  },
+  "${modID}:Trivikarma": {
+    "NAME": "Trivikarma",
+    "DESCRIPTION": "Exhaust a card. NL Gain [R] equal based on its rarity. NL (Rare = [R][R][R] NL Uncommon = [R][R] NL Everything else = [R])"
+  },
+  "${modID}:ShatteredColorlessRealm": {
+    "NAME": "Shattered Realm",
+    "DESCRIPTION": "Chose one: NL 1. Exhaust ALL cards. Add 1 ${modID}:ViciousAtraloud to your hand. NL Heal 7 health. NL Purge."
+  },
+  "${modID}:NewWorldFormation": {
+    "NAME": "World Formation",
+    "DESCRIPTION": "Scry !M! NL Purge"
+  },
+  "${modID}:NewWorldStars": {
+    "NAME": "New World Stars",
+    "DESCRIPTION": "${modID}:Discover a rare card. NL Purge"
+  },
+  "${modID}:AgesOfStarsAndFrost": {
+    "NAME": "Of Stars And Frost",
+    "DESCRIPTION": "${modID}:Discover a -heart ${modID}:Creature card. NL Exhaust"
+  },
+  "${modID}:NewWorldAmritara": {
+    "NAME": "Amritara",
+    "DESCRIPTION": "Upgrade ALL ${modID}:Creature cards. NL Purge"
+  },
+  "${modID}:RealmResonance": {
+    "NAME": "Worlds as One",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies NL Gain !B! Block NL Inflict !M! Vulnerable and Weak on ALL enemies."
+  },
+  "${modID}:VisasSamsara": {
+    "NAME": "Path to Samsara",
+    "DESCRIPTION": "Choose one: NL 1. Gain !M! Strength. NL 2. Gain !M! Dexterity. NL Gain [R]. NL Draw !M! cards.",
+    "UPGRADE_DESCRIPTION": "Choose one: NL 1. Gain !M! Strength. NL 2. Gain !M! Dexterity. NL Gain [R][R]. NL Draw !M! cards."
+  },
+  "${modID}:SharvSarga": {
+    "NAME": "Sharv Sarga",
+    "DESCRIPTION": "Shuffle ALL card in your hand into your draw pile. NL Draw the same number of cards."
+  },
+  "${modID}:LokaSamsara": {
+    "NAME": "Loka Samsara",
+    "DESCRIPTION": "Get Frozen Eye. NL Remove this card from your deck."
+  },
+  "${modID}:Veda Kalanta": {
+    "NAME": "VedaKalanta",
+    "DESCRIPTION": "${modID}:Creature NL Cost [R] less for each time you lose HP this combat. NL Deal !D! damage. NL If this card costed 0: ${modID}:Evolve_self."
+  },
+  "${modID}:RealmElegy": {
+    "NAME": "Realm Elegy",
+    "DESCRIPTION": "Lost 1 health !M! times. NL Gain !B! Block !M! times."
+  },
+  "${modID}:RealmEulogy": {
+    "NAME": "Realm Eulogy",
+    "DESCRIPTION": "Lost 1 health !D! times (affected by Strength). NL Gain !M! Strength."
+  },
+  "${modID}:VedaKalarcanum": {
+    "NAME": "Veda Kalarcanum",
+    "DESCRIPTION": "${modID}:Elite NL If X is less than !M!: Gain X [R] and shuffle this card into your draw pile. NL Otherwise: Stun an enemy."
+  }
+}

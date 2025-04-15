@@ -1,0 +1,16 @@
+{
+  "${modID}:MyRelic": {
+    "NAME": "Good Relic",
+    "FLAVOR": "Flavor text displayed in detailed relic view.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. [E] is an energy icon."
+    ]
+  },
+  "${modID}:StarfrostRelic": {
+    "NAME": "Hand of Starfrost",
+    "FLAVOR": "A hand containing the power of creation derived from Visas' emotions.",
+    "DESCRIPTIONS": [
+      "At the start of combat, choose #b1: NL Deal #b5 damage to ALL enemies NL Gain #b5 #yBlock NL Inflict #yWeak on ALL enemies NL Inflict #yVulnerable on ALL enemies."
+    ]
+  }
+}

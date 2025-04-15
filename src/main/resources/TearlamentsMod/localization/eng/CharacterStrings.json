@@ -1,0 +1,13 @@
+{
+  "${modID}:Visas": {
+    "NAMES": [
+      "Visas",
+      "the World Voyager"
+    ],
+    "TEXT": [
+      "A man with incredible power who has lost all his emotions. NL He ventures into the spire, NL hoping the power there will help him recover what he has lost.",
+      " NL Your strike the heart with all your might...",
+      "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~voyager,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+    ]
+  }
+}

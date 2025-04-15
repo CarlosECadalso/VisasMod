@@ -1,0 +1,37 @@
+{
+  "${modID}:OrbID": {
+    "NAME": "Orb Name",
+    "DESCRIPTION": [
+      "#yPassive: At the start of your turn, draw #b",
+      " card.",
+      " cards.",
+      " NL #yEvoke: Deal #b",
+      " damage to all enemies."
+    ]
+  },
+  "${modID}:TorridOrb": {
+    "NAME": "Torrid",
+    "DESCRIPTION": [
+      "#yPassive: At the start of your turn, gain #b",
+      " Temporary #yStrength.",
+      " NL #yEvoke: Add a #yMannadium #yTorrid to your hand."
+    ]
+  },
+  "${modID}:FearlessOrb": {
+    "NAME": "Fearless",
+    "DESCRIPTION": [
+      "#yPassive: At the start of your turn, draw #b",
+      " card.",
+      " cards.",
+      " NL #yEvoke: Add a #yMannadium #yFearless to your hand."
+    ]
+  },
+  "${modID}:MeekOrb": {
+    "NAME": "Meek",
+    "DESCRIPTION": [
+      "#yPassive: At the start of your turn, inflict #yWeak on a random enemy #b",
+      " times.",
+      " NL #yEvoke: Add a #yMannadium #yMeek to your hand."
+    ]
+  }
+}

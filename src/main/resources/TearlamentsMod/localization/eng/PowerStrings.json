@@ -1,0 +1,50 @@
+{
+  "${modID}:PowerID": {
+    "NAME": "Ultimate Power",
+    "DESCRIPTIONS": [
+      "You are Very Cool and Strong."
+    ]
+  },
+  "${modID}:PerlereinoPower": {
+    "NAME": "Primeval Planet Perlereino",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yTearlament card, deal ", " damage to all enemies."
+    ]
+  },
+  "${modID}:TearlamentScreamPower": {
+    "NAME": "Tearlaments Scream",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yTearlament card, all enemies lose ", " Strength for the turn."
+    ]
+  },
+  "${modID}:TearlamentSulliekPower": {
+    "NAME": "Tearlaments Sulliek",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yTearlament card, Mill 1 card and gain ", " Block."
+    ]
+  },
+  "${modID}:WraitsothPower": {
+    "NAME": "Pressured Planet Wraitsoth",
+    "DESCRIPTIONS": [
+      "Whenever a card is #yExhausted, deal ", " damage to all enemies."
+    ]
+  },
+  "${modID}:KashtiraPrepPower": {
+    "NAME": "Kashtira Preparations",
+    "DESCRIPTIONS": [
+      "Whenever you're attacked, inflict 1 #yWeak to the attacker."
+    ]
+  },
+  "${modID}:ReichphobiaPower": {
+    "NAME": "Primitive Planet Reichphobia",
+    "DESCRIPTIONS": [
+      "Whenever you play a #y Scareclaw card, deal ", " damage to all enemies for each card played this turn."
+    ]
+  },
+  "${modID}:CalariumPower": {
+    "NAME": "Peaceful Planet Calarium",
+    "DESCRIPTIONS": [
+      "Whenever an #yOrb is #yChanneled, deal ", " damage to all enemies."
+    ]
+  }
+}

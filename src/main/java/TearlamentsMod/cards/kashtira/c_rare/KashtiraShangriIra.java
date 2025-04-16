@@ -43,9 +43,7 @@ public class KashtiraShangriIra extends EvolvingCard {
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
 
-        tags.add(CustomTags.KASHTIRA);
-        tags.add(CustomTags.FUSION);
-        tags.add(CustomTags.CREATURE);
+        tags.add(CustomTags.KASHTIRA);        tags.add(CustomTags.FUSION);
         this.defineCardToFuseInto();
         this.purgeOnUse = true;
 

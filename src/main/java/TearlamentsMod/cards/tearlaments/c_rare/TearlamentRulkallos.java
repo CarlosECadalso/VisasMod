@@ -41,9 +41,7 @@ public class TearlamentRulkallos extends EvolvingCard {
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
 
-        tags.add(CustomTags.TEARLAMENTS);
-        tags.add(CustomTags.FUSION);
-        tags.add(CustomTags.CREATURE);
+        tags.add(CustomTags.TEARLAMENTS);        tags.add(CustomTags.FUSION);
     }
 
     @Override

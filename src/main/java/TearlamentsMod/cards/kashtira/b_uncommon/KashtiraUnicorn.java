@@ -53,7 +53,7 @@ public class KashtiraUnicorn extends EvolvingCard {
     @Override
     public void triggerOnOtherCardPlayed(AbstractCard c) {
         super.triggerOnOtherCardPlayed(c);
-        if (c.hasTag(CustomTags.CREATURE) && (this.cost < 3 || this.costForTurn < 3)){
+        if ((c.hasTag(CustomTags.CREATURE)) || c.hasTag(CustomTags.FUSION) && (this.cost < 3 || this.costForTurn < 3)){
             this.setCostForTurn(3);
         }
     }

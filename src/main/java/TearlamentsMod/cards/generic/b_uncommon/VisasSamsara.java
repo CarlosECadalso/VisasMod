@@ -1,26 +1,23 @@
-package TearlamentsMod.cards.mannadium.a_common;
+package TearlamentsMod.cards.generic.b_uncommon;
 
 import TearlamentsMod.cards.BaseCard;
-import TearlamentsMod.cards.EvolvingCard;
-import TearlamentsMod.cards.scareclaw.c_rare.ScareclawTriHeart;
 import TearlamentsMod.character.Visas;
-import TearlamentsMod.orbs.FearlessOrb;
 import TearlamentsMod.util.CardStats;
-import TearlamentsMod.util.CustomTags;
+import basemod.devcommands.draw.Draw;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
-import com.megacrit.cardcrawl.actions.defect.RemoveNextOrbAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
+import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
-public class MannadiumImaginings extends BaseCard {
-    public static final String ID = makeID(MannadiumImaginings.class.getSimpleName());
+public class VisasSamsara extends BaseCard {
+    public static final String ID = makeID(VisasSamsara.class.getSimpleName());
 
     private static final CardStats info = new CardStats(
             Visas.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
@@ -36,23 +33,23 @@ public class MannadiumImaginings extends BaseCard {
     private static final int UPG_DAMAGE = 0;
     private static final int BLOCK = 0;
     private static final int UPG_BLOCK = 0;
-    private static final int MAGIC_NUMBER = 3;
+    private static final int MAGIC_NUMBER = 1;
     private static final int UPG_MAGIC_NUMBER = 1;
 
-    public MannadiumImaginings() {
+    public VisasSamsara() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
 
         setDamage(DAMAGE,UPG_DAMAGE);
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
-
-        tags.add(CustomTags.MANNADIUM);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new RemoveNextOrbAction());
+        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, magicNumber)));
         addToBot(new DrawCardAction(magicNumber));
+
     }
 
 }

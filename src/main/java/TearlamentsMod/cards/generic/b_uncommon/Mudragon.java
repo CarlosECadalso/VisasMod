@@ -36,9 +36,7 @@ public class Mudragon extends BaseCard {
         setDamage(DAMAGE,UPG_DAMAGE);
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
-
         tags.add(CustomTags.FUSION);
-        tags.add(CustomTags.CREATURE);
 
     }
 
@@ -46,11 +44,5 @@ public class Mudragon extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL)));
         addToBot(new GainBlockAction(p, block));
-    }
-
-    @Override
-    public void triggerOnManualDiscard() {
-        super.triggerOnManualDiscard();
-        addToBot(new GainBlockAction(AbstractDungeon.player, block));
     }
 }

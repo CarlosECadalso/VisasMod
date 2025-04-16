@@ -44,9 +44,7 @@ public class TearlamentKaleidoHeart extends EvolvingCard {
         setCostUpgrade(2);
 
 
-        tags.add(CustomTags.TEARLAMENTS);
-        tags.add(CustomTags.FUSION);
-        tags.add(CustomTags.CREATURE);
+        tags.add(CustomTags.TEARLAMENTS);        tags.add(CustomTags.FUSION);
     }
 
     @Override

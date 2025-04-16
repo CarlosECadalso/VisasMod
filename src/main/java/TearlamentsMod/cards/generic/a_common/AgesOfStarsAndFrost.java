@@ -1,26 +1,31 @@
-package TearlamentsMod.cards.mannadium.a_common;
+package TearlamentsMod.cards.generic.a_common;
 
 import TearlamentsMod.cards.BaseCard;
-import TearlamentsMod.cards.EvolvingCard;
+import TearlamentsMod.cards.generic.c_rare.ViciousAstraloud;
+import TearlamentsMod.cards.kashtira.b_uncommon.KashtiraRiseheart;
+import TearlamentsMod.cards.kashtira.c_rare.KashtiraAriseHeart;
+import TearlamentsMod.cards.kashtira.c_rare.KashtiraShangriIra;
+import TearlamentsMod.cards.mannadium.b_uncommon.MannadiumRiumheart;
+import TearlamentsMod.cards.mannadium.c_rare.MannadiumPrimeHeart;
+import TearlamentsMod.cards.mannadium.c_rare.MannadiumTrisukta;
+import TearlamentsMod.cards.scareclaw.b_uncommon.ScareclawReichheart;
 import TearlamentsMod.cards.scareclaw.c_rare.ScareclawTriHeart;
+import TearlamentsMod.cards.tearlaments.b_uncommon.TearlamentReinoheart;
+import TearlamentsMod.cards.tearlaments.c_rare.TearlamentKaleidoHeart;
+import TearlamentsMod.cards.tearlaments.c_rare.TearlamentKitkallos;
+import TearlamentsMod.cards.tearlaments.c_rare.TearlamentRulkallos;
 import TearlamentsMod.character.Visas;
-import TearlamentsMod.orbs.FearlessOrb;
 import TearlamentsMod.util.CardStats;
-import TearlamentsMod.util.CustomTags;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
-import com.megacrit.cardcrawl.actions.defect.RemoveNextOrbAction;
+import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class MannadiumImaginings extends BaseCard {
-    public static final String ID = makeID(MannadiumImaginings.class.getSimpleName());
+public class AgesOfStarsAndFrost extends BaseCard {
+    public static final String ID = makeID(AgesOfStarsAndFrost.class.getSimpleName());
 
     private static final CardStats info = new CardStats(
             Visas.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
@@ -36,23 +41,34 @@ public class MannadiumImaginings extends BaseCard {
     private static final int UPG_DAMAGE = 0;
     private static final int BLOCK = 0;
     private static final int UPG_BLOCK = 0;
-    private static final int MAGIC_NUMBER = 3;
-    private static final int UPG_MAGIC_NUMBER = 1;
+    private static final int MAGIC_NUMBER = 1;
+    private static final int UPG_MAGIC_NUMBER = 98;
 
-    public MannadiumImaginings() {
+    public AgesOfStarsAndFrost() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
 
         setDamage(DAMAGE,UPG_DAMAGE);
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
+        setCostUpgrade(0);
 
-        tags.add(CustomTags.MANNADIUM);
+        this.purgeOnUse = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new RemoveNextOrbAction());
-        addToBot(new DrawCardAction(magicNumber));
+        ArrayList<AbstractCard> choices = new ArrayList<AbstractCard>();
+        choices.add(new TearlamentReinoheart());
+        choices.add(new MannadiumRiumheart());
+        choices.add(new ScareclawReichheart());
+        choices.add(new KashtiraRiseheart());
+        Collections.shuffle(choices);
+
+        int i = 3;
+        while (i < choices.size()) {
+            choices.remove(0);
+        }
+        addToBot(new ChooseOneAction(choices));
     }
 
 }

@@ -41,12 +41,10 @@ public class KashtiraAriseHeart extends EvolvingCard {
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
-        setExhaust(true);
+        setExhaust(true, true);
         setCostUpgrade(1);
 
-        tags.add(CustomTags.KASHTIRA);
-        tags.add(CustomTags.FUSION);
-        tags.add(CustomTags.CREATURE);
+        tags.add(CustomTags.KASHTIRA);        tags.add(CustomTags.FUSION);
     }
 
     @Override
